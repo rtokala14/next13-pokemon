@@ -19,7 +19,7 @@ function SearchInput() {
   const startupPokemon = useAppSelector((state) => state.search.startupPokemon);
   const data = useAppSelector(
     (state) =>
-      state.pokemonApi.queries[`search("${search})"`]?.data as Pokemon[]
+      state.pokemonApi.queries[`search("${search}")`]?.data as Pokemon[]
   );
 
   useEffect(() => {
